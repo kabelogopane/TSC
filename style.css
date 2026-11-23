@@ -1781,3 +1781,80 @@ a {
         transition-duration: 0.01ms !important;
     }
 }
+
+
+/* =========================================================
+   20. STANDALONE CLEANING REQUEST PAGE
+   ========================================================= */
+.request-page {
+    min-height: 100vh;
+    background: var(--dark);
+}
+.request-page .header {
+    position: relative;
+}
+.request-page .request-section {
+    min-height: calc(100vh - 150px);
+    padding: 70px 0 85px;
+}
+.request-container {
+    width: min(100% - 40px, 680px);
+    margin: 0 auto;
+}
+.request-heading {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.request-heading .section-label {
+    color: #60a5fa;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.request-heading h1 {
+    color: #ffffff;
+    font-size: clamp(36px, 6vw, 52px);
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    margin: 8px 0 12px;
+}
+.request-heading > p:not(.section-label) {
+    color: #cbd5e1;
+    font-size: 16px;
+}
+.request-heading .request-back {
+    margin-top: 14px;
+    font-size: 13px !important;
+}
+.request-back a {
+    color: #93c5fd;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.request-page .booking-form {
+    max-width: 680px;
+    margin: 0 auto;
+}
+.request-page .form-field {
+    margin-bottom: 19px;
+}
+.request-page .booking-submit {
+    margin-top: 4px;
+}
+.request-footer {
+    padding: 18px 0;
+}
+.request-footer .copyright {
+    padding-top: 0;
+    border-top: 0;
+    text-align: center;
+}
+@media (max-width: 520px) {
+    .request-page .request-section {
+        padding: 48px 0 60px;
+    }
+    .request-container {
+        width: min(100% - 28px, 680px);
+    }
+}
