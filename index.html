@@ -586,7 +586,7 @@
                 "Please confirm the price and availability. Thank you."
             ];
 
-            const whatsappUrl = "https://wa.me/27797480666?text=" + encodeURIComponent(details.join("\\n"));
+            const whatsappUrl = "https://wa.me/27797480666?text=" + encodeURIComponent(details.join(String.fromCharCode(10));
             window.location.href = whatsappUrl;
         });
     </script>
