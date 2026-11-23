@@ -24,6 +24,7 @@ The website includes:
 
 - `index.html` — main website
 - `contact.html` — contact page
+- `request-cleaning.html` — standalone cleaning request form that sends the enquiry to WhatsApp
 - `style.css` — website styling
 
 No customer or sneaker photos are included at this stage.
