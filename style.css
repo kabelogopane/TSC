@@ -1858,3 +1858,64 @@ a {
         width: min(100% - 28px, 680px);
     }
 }
+
+
+/* =========================================================
+   REAL SNEAKER PHOTO GALLERY
+   ========================================================= */
+.gallery-group {
+    margin-top: 48px;
+}
+.gallery-group:first-of-type {
+    margin-top: 0;
+}
+.gallery-group-heading {
+    margin-bottom: 18px;
+}
+.gallery-group-heading h3 {
+    color: var(--dark);
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+.gallery-group-heading p {
+    color: var(--muted);
+    font-size: 14px;
+}
+.gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+}
+.gallery-item {
+    min-height: 0;
+    margin: 0;
+    background: #ffffff;
+}
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+.gallery-item figcaption {
+    padding: 12px 15px;
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 700;
+    background: #ffffff;
+}
+@media (max-width: 950px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (max-width: 700px) {
+    .gallery-group {
+        margin-top: 38px;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    .gallery-item img {
+        height: 260px;
+    }
+}
