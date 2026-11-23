@@ -1,6 +1,6 @@
-# Teboho Sneaker Cleaning
+# Teboho Sneaker Cleaning (TSC)
 
-Teboho Sneaker Cleaning provides affordable sneaker cleaning services in Marshalltown, Johannesburg.
+Teboho Sneaker Cleaning (TSC) provides affordable sneaker cleaning services in Marshalltown, Johannesburg.
 
 ## Website
 
@@ -12,7 +12,7 @@ The website includes:
 
 ## Business details
 
-- **Business name:** Teboho Sneaker Cleaning
+- **Business name:** Teboho Sneaker Cleaning (TSC)
 - **Location:** 20 Anderson St, Live Easy Apartments, Anderson St & Ferreira St, Marshalltown, Johannesburg, South Africa
 - **Phone / WhatsApp:** 079 748 0666
 - **Email:** tebohosneakercleaning@gmail.com
