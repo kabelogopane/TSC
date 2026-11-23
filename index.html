@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Teboho Sneaker Cleaning (TSC) | Sneaker Cleaning in Marshalltown</title>
+    <title>Teboho Sneaker Cleaning | Sneaker Cleaning in Marshalltown</title>
 
-    <meta name="description" content="Teboho Sneaker Cleaning (TSC) offers affordable sneaker cleaning in Marshalltown, Johannesburg. Cleaning from R40 per pair.">
+    <meta name="description" content="Teboho Sneaker Cleaning offers affordable sneaker cleaning in Marshalltown, Johannesburg. Cleaning from R40 per pair.">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,7 +20,7 @@
         <div class="container nav-container">
 
             <a href="#home" class="logo">
-                TEBOHO <span>TEKKIE WASH</span>
+                Teboho Sneaker Cleaning
             </a>
 
             <nav class="nav">
@@ -84,7 +84,7 @@
             <div class="container">
 
                 <div class="section-heading">
-                    <p class="section-label">WHY TEBOHO?</p>
+                    <p class="section-label">WHY CHOOSE US?</p>
                     <h2>Simple. Affordable. Local.</h2>
                 </div>
 
@@ -383,36 +383,71 @@
             <div class="container booking-container">
 
                 <div class="booking-content">
-
                     <p class="section-label">READY TO BOOK?</p>
-
                     <h2>Give Your Tekkies<br>A Fresh Look.</h2>
+                    <p>Tell us what you need cleaned. We will help confirm the price, availability and collection arrangements.</p>
 
-                    <p>
-                        Contact Teboho Sneaker Cleaning (TSC) to book a cleaning
-                        or ask about collection and delivery.
-                    </p>
+                    <div class="booking-trust">
+                        <p><strong>From R40 per pair</strong></p>
+                        <p>Typical turnaround: 2–3 working days.</p>
+                        <p class="booking-disclaimer">Submitting this form opens WhatsApp with your details. Your booking is only confirmed after Teboho Sneaker Cleaning replies.</p>
+                    </div>
+                </div>
 
-                    <div class="booking-buttons">
+                <form id="booking-form" class="booking-form">
+                    <h3>Request a Cleaning</h3>
+                    <p class="form-intro">Complete the details below and continue to WhatsApp.</p>
 
-                        <!-- Replace the number below with the real WhatsApp number -->
-
-                        <a href="https://wa.me/27797480666?text=Hi%20TSC%2C%20I%27d%20like%20to%20book%20a%20sneaker%20cleaning."
-                           class="button whatsapp-button"
-                           target="_blank">
-                            WhatsApp Us
-                        </a>
-
-                        <!-- Replace the number below with the real phone number -->
-
-                        <a href="tel:+27797480666"
-                           class="button call-button">
-                            Call Us
-                        </a>
-
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="customer-name">Your name</label>
+                            <input id="customer-name" name="name" type="text" autocomplete="name" required maxlength="80" placeholder="Enter your name">
+                        </div>
+                        <div class="form-field">
+                            <label for="customer-phone">Phone number</label>
+                            <input id="customer-phone" name="phone" type="tel" autocomplete="tel" required maxlength="25" placeholder="e.g. 079 123 4567">
+                        </div>
                     </div>
 
-                </div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="service-type">Service</label>
+                            <select id="service-type" name="service" required>
+                                <option value="">Choose a service</option>
+                                <option value="Standard sneaker cleaning">Standard sneaker cleaning</option>
+                                <option value="Deep cleaning">Deep cleaning</option>
+                                <option value="Collection and delivery enquiry">Collection and delivery enquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label for="pair-count">Number of pairs</label>
+                            <input id="pair-count" name="pairs" type="number" min="1" max="20" step="1" required value="1">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="preferred-date">Preferred date</label>
+                            <input id="preferred-date" name="date" type="date">
+                        </div>
+                        <div class="form-field">
+                            <label for="handover">How will you hand over the sneakers?</label>
+                            <select id="handover" name="handover" required>
+                                <option value="">Choose an option</option>
+                                <option value="I can drop them off">I can drop them off</option>
+                                <option value="Please discuss collection with me">Please discuss collection with me</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="booking-notes">Anything we should know? <span>(optional)</span></label>
+                        <textarea id="booking-notes" name="notes" rows="4" maxlength="500" placeholder="Tell us about the sneakers or any stains that need attention."></textarea>
+                    </div>
+
+                    <button class="button whatsapp-button booking-submit" type="submit">Continue to WhatsApp</button>
+                    <p class="form-privacy">Your details are used to respond to this enquiry. Do not include sensitive personal information.</p>
+                </form>
 
             </div>
 
@@ -471,7 +506,7 @@
                 </div>
                 <div class="contact-qr">
                     <img src="https://quickchart.io/qr?text=https%3A%2F%2Fkabelogopane.github.io%2FTeboho-Tekkie-Wash-Professional-Sneaker-Cleaning%2Fcontact.html&size=220" alt="QR code for Teboho Sneaker Cleaning contact details">
-                    <p>Scan to contact TSC via WhatsApp, email or phone.</p>
+                    <p>Scan to contact Teboho Sneaker Cleaning via WhatsApp, email or phone.</p>
                 </div>
 
             </div>
@@ -519,7 +554,7 @@
         <div class="container copyright">
 
             <p>
-                © 2026 Teboho Sneaker Cleaning (TSC). All rights reserved.
+                © 2026 Teboho Sneaker Cleaning. All rights reserved.
             </p>
 
         </div>
@@ -527,5 +562,33 @@
     </footer>
 
 
-</body>
+
+    <script>
+        const bookingForm = document.getElementById("booking-form");
+
+        bookingForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            if (!bookingForm.reportValidity()) return;
+
+            const formData = new FormData(bookingForm);
+            const details = [
+                "Hi Teboho Sneaker Cleaning, I would like to request a sneaker cleaning.",
+                "",
+                "Name: " + formData.get("name"),
+                "Phone: " + formData.get("phone"),
+                "Service: " + formData.get("service"),
+                "Number of pairs: " + formData.get("pairs"),
+                "Preferred date: " + (formData.get("date") || "Flexible"),
+                "Handover: " + formData.get("handover"),
+                "Additional details: " + (formData.get("notes") || "None"),
+                "",
+                "Please confirm the price and availability. Thank you."
+            ];
+
+            const whatsappUrl = "https://wa.me/27797480666?text=" + encodeURIComponent(details.join(String.fromCharCode(10)));
+            window.location.href = whatsappUrl;
+        });
+    </script>
+\n</body>
 </html>
